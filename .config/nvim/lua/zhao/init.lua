@@ -29,7 +29,7 @@ vim.o.smarttab = true
 vim.opt.shortmess:append({ c = true })
 vim.o.inccommand = "nosplit"
 
-vim.o.clipboard = "unnamedplus"
+vim.opt.clipboard = "unnamedplus"
 
 vim.cmd("set backspace=indent,eol,start")
 -- :noh to clear search highlighting

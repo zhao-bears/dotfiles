@@ -36,7 +36,7 @@ end
 -- might fix something
 -- vim.o.runtimepath = vim.fn.stdpath("data") .. "/site/pack/*/start/*," .. vim.o.runtimepath
 
-
+vim.opt.clipboard = "unnamedplus"
 require("zhao")
 require("zhao.keymaps")
 require("zhao.lazy")

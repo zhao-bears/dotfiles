@@ -1,0 +1,32 @@
+profile BEARS-office {
+    output $INTERNAL disable
+    output $BEARS-1 enable
+    output $BEARS-2 enable
+}
+
+profile Laptop {
+    output $INTERNAL enable
+}
+
+output "Samsung Display Corp. ATNA40HQ02-0 Unknown" {
+  alias $INTERNAL
+  mode 2880x1800@60.00
+  position 0,0
+  scale 1
+}
+
+output "Dell Inc. DELL E2425HSM 2MBLT94" {
+  alias $BEARS-2
+  mode 1920x1080@100.00
+  position 1280,0
+  scale 1
+}
+
+output "Dell Inc. DELL S2725DC 4YQMQC4" {
+  alias $BEARS-1
+  mode 2560x1440@143.97
+  position 0,0
+  scale 1
+}
+
+

@@ -20,3 +20,5 @@ dconf
 hosts.yml
 hosts.json
 packer_compiled.lua
+
+.config/hypr/monitors.conf

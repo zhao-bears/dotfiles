@@ -1,4 +1,4 @@
-export PATH=$PATH:$(pwd):~/.local/bin:/usr/local/go/bin:~/.cargo/bin:/usr/lib/dart/bin:~/nvim-linux64/bin:/mnt/c/tools/neovim/Neovim:/mnt/c/tools/neovim/Neovim/bin:/mnt/c/Windows/system32:~/bin:~/snap/flutter/common/flutter:~/development/flutter/bin:~/.pub-cache/bin:/opt/mssql-tools/bin:~/.pyenv/bin:/usr/local/bin/node:~/.local/share/nvim/mason/bin
+export PATH=$PATH:$(pwd):~/.local/bin:/usr/local/go/bin:/usr/lib/dart/bin:~/nvim-linux64/bin:/mnt/c/tools/neovim/Neovim:/mnt/c/tools/neovim/Neovim/bin:/mnt/c/Windows/system32:~/bin:~/snap/flutter/common/flutter:~/development/flutter/bin:~/.pub-cache/bin:/opt/mssql-tools/bin:~/.pyenv/bin:/usr/local/bin/node:~/.local/share/nvim/mason/bin
 
 # export PATH=$(echo "$PATH" | sed -e 's/:\/mnt[^:]*//g') # strip out problematic Windows %PATH%
 export TESSDATA_PREFIX='/usr/local/share/tessdata'
@@ -24,7 +24,5 @@ export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 
-source /usr/local/lib/node_modules/@hyperupcall/autoenv/activate.sh # autoenv
 source ~/.bash_aliases
 source ~/.bash_functions
-. "$HOME/.cargo/env"

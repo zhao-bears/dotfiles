@@ -8,10 +8,8 @@ return {
     config = function()
       require("zhao.config.nvim-treesitter")
     end,
-  },
-  {
-    "nvim-treesitter/nvim-treesitter-textobjects",
-    requires = "nvim-treesitter/nvim-treesitter",
+    lazy = false,
+    build = ':TSUpdate'
   },
   {
     "folke/trouble.nvim",
@@ -235,13 +233,13 @@ return {
       "mfussenegger/nvim-dap", "mfussenegger/nvim-dap-python", --optional
       { "nvim-telescope/telescope.nvim", branch = "0.1.x", dependencies = { "nvim-lua/plenary.nvim" } },
     },
-    ft = "python",                   -- Load when opening Python files
+    ft = "python",                     -- Load when opening Python files
     keys = {
       { ",v", "<cmd>VenvSelect<cr>" }, -- Open picker on keymap
     },
-    opts = {                         -- this can be an empty lua table - just showing below for clarity.
-      search = {},                   -- if you add your own searches, they go here.
-      options = {}                   -- if you add plugin options, they go here.
+    opts = {                           -- this can be an empty lua table - just showing below for clarity.
+      search = {},                     -- if you add your own searches, they go here.
+      options = {}                     -- if you add plugin options, they go here.
     },
   },
   -- latex

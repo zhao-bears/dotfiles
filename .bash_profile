@@ -1,8 +1,26 @@
-export PATH=$PATH:$(pwd):~/.local/bin:/usr/local/go/bin:/usr/lib/dart/bin:~/nvim-linux64/bin:/mnt/c/tools/neovim/Neovim:/mnt/c/tools/neovim/Neovim/bin:/mnt/c/Windows/system32:~/bin:~/snap/flutter/common/flutter:~/development/flutter/bin:~/.pub-cache/bin:/opt/mssql-tools/bin:~/.pyenv/bin:/usr/local/bin/node:~/.local/share/nvim/mason/bin:$(go env GOPATH)/bin
+export GOPATH="$HOME/go"
+path=(
+  $path
+  $HOME/.local/bin
+  /usr/local/go/bin
+  /usr/lib/dart/bin
+  $HOME/nvim-linux64/bin
+  $HOME/bin
+  $HOME/snap/flutter/common/flutter
+  $HOME/development/flutter/bin
+  $HOME/.pub-cache/bin
+  $HOME/.pyenv/bin
+  $HOME/.local/share/nvim/mason/bin
+  $GOPATH/bin
+  # Windows paths (optional - keep them if you use .exe files in WSL)
+  /mnt/c/tools/neovim/Neovim
+  /mnt/c/tools/neovim/Neovim/bin
+  /mnt/c/Windows/system32
+)
+export PATH
 
 # export PATH=$(echo "$PATH" | sed -e 's/:\/mnt[^:]*//g') # strip out problematic Windows %PATH%
 export TESSDATA_PREFIX='/usr/local/share/tessdata'
-export GOPATH="$HOME/go"
 
 # sway - to allow flameshot to work
 # https://github.com/flameshot-org/flameshot/blob/master/docs/Sway%20and%20wlroots%20support.md

@@ -44,3 +44,5 @@ export XMODIFIERS=@im=fcitx
 
 source ~/.bash_aliases
 source ~/.bash_functions
+
+. "$HOME/.local/bin/env"

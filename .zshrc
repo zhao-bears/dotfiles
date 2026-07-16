@@ -9,6 +9,8 @@ export LC_ALL="en_SG.UTF-8"
 export LANG="en_SG.UTF-8"
 export LC_CTYPE="en_SG.UTF-8"
 
+source ~/.bash_profile
+
 OS=`uname -s`
 # DIST=`lsb_release -sd`
 # DIST=cat /etc/*-release | grep "Distributor ID:" | sed 's/Distributor ID://g' | sed 's/"//g'
@@ -50,7 +52,6 @@ autoload -U compinit && compinit
 
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-source ~/.bash_profile
 
 eval "$(zoxide init zsh --cmd j)"
 

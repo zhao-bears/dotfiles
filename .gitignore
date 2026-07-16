@@ -24,3 +24,8 @@ packer_compiled.lua
 .config/hypr/monitors.conf
 # Ignore dynamic wallpaper cache and effects
 .config/hypr/wallpaper_effects/
+# Ignore dynamic theme and wallpaper symlinks
+.config/rofi/.current_wallpaper
+.config/rofi/.current_wallpaper_focused
+.config/waybar/config
+.config/waybar/style.css
